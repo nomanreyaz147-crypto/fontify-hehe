@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fontify-hehe.netlify.app/sitemap.xml
+Sitemap: https://fontify-hehe-5v9n4kbxy-terminators-ok.vercel.app/sitemap.xml
