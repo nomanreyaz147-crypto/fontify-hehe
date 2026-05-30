@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fontify-hehe.netlify.app/" />
+  <meta property="og:title" content="Fontify – Viral Text Styler for Social Media" />
+  <meta property="og:description" content="Instantly convert your text into cool Unicode font styles for Instagram, Twitter, TikTok & more." />
+  <meta property="og:image" content="https://fontify-hehe.netlify.app/preview-image.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fontify – Instantly convert your text into cool Unicode font styles for Instagram, Twitter, TikTok & more." />
+  <meta name="keywords" content="fancy text, unicode fonts, cool text generator, instagram fonts, font styler" />
+  <title>Fontify – Viral Text Styler for Social Media</title>
+
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Fontify" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;600;700&family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_CLIENT_ID" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-block">
+        <span class="logo-icon" aria-hidden="true">✦</span>
+        <h1 class="logo-text">Fontify</h1>
+      </div>
+      <p class="logo-sub">Instantly style your text for Social Media</p>
+      
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="input-section" aria-label="Text input">
+      <div class="input-wrapper">
+        <label for="userInput" class="input-label">Type or paste your text</label>
+        <div class="textarea-shell">
+          <textarea
+            id="userInput"
+            class="text-input"
+            placeholder="Type something here… e.g. Hello World"
+            rows="3"
+            maxlength="300"
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Text to convert"
+          ></textarea>
+          <button class="clear-btn" id="clearBtn" aria-label="Clear text" title="Clear">✕</button>
+        </div>
+        <div class="input-meta">
+          <span class="char-count"><span id="charCount">0</span> / 300</span>
+          <span class="input-hint">Results update as you type ⚡</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="output-section" aria-label="Styled text results">
+      <div class="output-header">
+        <h2 class="output-title">Your Styled Fonts</h2>
+        <span class="style-count" id="styleCount">8 styles</span>
+      </div>
+      <div class="font-grid" id="fontGrid">
+        </div>
+      <div class="empty-state" id="emptyState">
+        <div class="empty-icon">✦</div>
+        <p>Start typing above to see your text transformed into viral font styles.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="ad-wrapper bottom-ad" role="complementary" aria-label="Advertisement">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-YOUR_CLIENT_ID"
+         data-ad-slot="BOTTOM_SLOT_ID"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+ <footer class="site-footer">
+    <p>© <span id="footerYear"></span> Fontify · Made for Social Media Creators &nbsp;✦&nbsp; Free &amp; Instant</p>
+    
+    <p class="kashmir-credit">Built with ❤️ in Kashmir</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-text">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
