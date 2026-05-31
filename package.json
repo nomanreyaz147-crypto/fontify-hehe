@@ -1,0 +1,28 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "esbuild src/script.js --bundle --outfile=dist/script.js --format=iife",
+    "dev": "esbuild src/script.js --bundle --outfile=dist/script.js --format=iife --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nomanreyaz147-crypto/fontify-hehe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nomanreyaz147-crypto/fontify-hehe/issues"
+  },
+  "homepage": "https://github.com/nomanreyaz147-crypto/fontify-hehe#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}
